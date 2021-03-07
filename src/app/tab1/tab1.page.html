@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      welcome
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <h1>Titre</h1>
+  <div>
+    <label>Nom : </label>
+    <input type="text" placeholder="hey" />
+  </div>
+
+  <div>
+    <label>Nombre de Neuronnes : </label>
+    <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+  <div>
+
+    <ion-item>
+      <ion-label>Notes</ion-label>
+      <ion-textarea [(ngModel)]="area.notes" name="notes" placeholder=""id="notes" rows="6" cols="20" placeholder="taper ce que vous voulez..."></ion-textarea>
+    </ion-item>
+  </div>
+<hr />
+  <div>
+    <!-- L'attribut (click) en angular permet d'aller cherche la methode du nom dans les "" qui sera ecrite dans le fichier en .page.ts -->
+      <ion-button (click)="myAlert()">Go</ion-button>
+      <ion-button (click)="myTxt()">Ma Notes</ion-button>
+  </div>
 </ion-content>

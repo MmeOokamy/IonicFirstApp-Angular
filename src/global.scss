@@ -24,3 +24,8 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+body
+{
+  background-image: linear-gradient(to right top, #a8eb12, #69de56, #28ce7b, #00ba92, #00a59a, #009197, #007e8f, #006a82, #005472, #00405f, #022c4c, #051937);
+}
