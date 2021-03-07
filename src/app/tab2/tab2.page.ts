@@ -15,7 +15,11 @@ export class Tab2Page {
   txt = {parole: ''};
 
   speak(){
-    this.tts.speak(this.txt.parole)
+    this.tts.speak({
+      text: this.txt.parole,
+      locale: 'fr-FR',
+      rate: 1
+    })
   .then(() => console.log('Success'))
   .catch((reason: any) => console.log(reason));
   }
